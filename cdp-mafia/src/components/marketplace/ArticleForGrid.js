@@ -7,7 +7,7 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 
 export default function ArticleForGrid() {
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card style={{flex:1, backgroundColor:'lightgreen'}} sx={{ maxWidth: 345 }}>
             <CardActionArea>
                 <CardMedia
                     component="img"
@@ -17,7 +17,7 @@ export default function ArticleForGrid() {
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        Lizard
+                        CommerzbankGreen
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                         Lizards are a widespread group of squamate reptiles, with over 6,000
@@ -26,7 +26,7 @@ export default function ArticleForGrid() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="primary">
+                <Button size="small" color="primary" >
                     Share
                 </Button>
             </CardActions>
