@@ -22,7 +22,7 @@ export const Footer = (props) => {
     return (
         <Box sx={{bgcolor: 'background.paper', p: 6}} component="footer">
             <Typography variant="h6" align="center" gutterBottom>
-                EarthSoul contact information
+                Sustainable Souls contact information
             </Typography>
             <Typography
                 variant="subtitle1"

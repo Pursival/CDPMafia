@@ -4,13 +4,13 @@ import PersonalTracking from "./components/personalTracking/personalTracking";
 import ReactDOM from "react-dom/client";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Navigation from "./components/common/navigation";
-import {Home} from "./components/common/home";
 import FullArticle1 from "./components/marketplace/FullArticle1";
 import FullArticle6 from "./components/marketplace/FullArticle6";
 import FullArticle2 from "./components/marketplace/FullArticle2";
 import FullArticle3 from "./components/marketplace/FullArticle3";
 import FullArticle4 from "./components/marketplace/FullArticle4";
 import FullArticle5 from "./components/marketplace/FullArticle5";
+import {Home} from "./components/dashboard/home";
 
 export default function App() {
     return (
