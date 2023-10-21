@@ -10,7 +10,7 @@ import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 
 function PersonalTracking(props) {
-    const {post} = props;
+    // const {post} = props;
 
     return (
         <Paper
