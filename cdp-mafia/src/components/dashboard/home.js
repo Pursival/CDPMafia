@@ -9,6 +9,7 @@ import AnalyticsOrderTimeline from "./app-order-timeline";
 import AppCurrentVisits from "./app-current-visits";
 import {Table, TableBody, TableCell, TableContainer, TableHead, TableRow} from "@mui/material";
 import Paper from "@mui/material/Paper";
+import {Link} from "react-router-dom";
 
 
 export const Home = (props) => {
@@ -91,7 +92,7 @@ export const Home = (props) => {
                     />
                 </Grid>
                 <Grid xs={12} md={6} lg={4}>
-                    <AppCurrentVisits
+                    <AppCurrentVisits component={Link} to="/personalChart"
                         title="Current Visits"
                         chart={{
                             series: [

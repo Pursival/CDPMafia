@@ -41,7 +41,6 @@ export default function AppCurrentVisits({ title, subheader, chart, ...other }) 
         enabled: true,
       },
     },
-    colors,
     labels: series.map((i) => i.label),
     stroke: {
       colors: [theme.palette.background.paper],
