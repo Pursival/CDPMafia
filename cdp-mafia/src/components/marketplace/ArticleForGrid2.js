@@ -5,7 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 
-export default function ArticleForGrid() {
+export default function ArticleForGrid2() {
     return (
         <Card style={{flex:1, backgroundColor:'lightgreen'}} sx={{ maxWidth: 345 }}>
             <CardActionArea>
@@ -13,14 +13,14 @@ export default function ArticleForGrid() {
                     component="img"
                     height="140"
                     alt="green iguana"
-                    image={require('C:\\Users\\Crazzyninja\\IdeaProjects\\CDPMafiaLatest\\cdp-mafia\\src\\components\\imagesFolder\\comerca.jpg')}
+                    image={require('C:\\Users\\Crazzyninja\\IdeaProjects\\CDPMafiaLatest\\cdp-mafia\\src\\components\\imagesFolder\\footprint.jpg')}
                         />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        CommerzbankGreen
+                        CommerzbankBlue
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        Commerzbank green's purpose is reducing carbon footprint for bank customers by
+                        Commerzbank blue's purpose is reducing carbon footprint for bank customers by
                         reducing use of non reusable materials.
                     </Typography>
                 </CardContent>

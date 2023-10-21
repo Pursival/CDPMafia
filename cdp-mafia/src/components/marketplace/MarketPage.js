@@ -16,6 +16,11 @@ import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import ArticleForGrid from "./ArticleForGrid";
+import ArticleForGrid2 from "./ArticleForGrid2";
+import ArticleForGrid3 from "./ArticleForGrid3";
+import ArticleForGrid5 from "./ArticleForGrid5";
+import ArticleForGrid4 from "./ArticleForGrid4";
+import ArticleForGrid6 from "./ArticleForGrid6";
 
 function Copyright() {
     return (
@@ -30,9 +35,27 @@ function Copyright() {
     );
 }
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const images = [
+//     {
+//         id: 1,
+//         title: 'CommerzBankGreen',
+//         imageUrl: 'C:\\Users\\Crazzyninja\\IdeaProjects\\CDPMafiaLatest\\cdp-mafia\\src\\components\\imagesFolder\\comerca.jpg',
+//         buttonText: 'Invest',
+//         description: 'Commerzbank green s purpose is reducing carbon footprint for bank customers by reducing use of non reusable materials.'
+//     },
+//     {
+//         id: 2,
+//         title: 'CommerzBankBlue',
+//         imageUrl: 'C:\\Users\\Crazzyninja\\IdeaProjects\\CDPMafiaLatest\\cdp-mafia\\src\\components\\imagesFolder\\footprint.jpg',
+//         buttonText: 'Invest2',
+//         description: 'I am blue dabade dabada',
+//     },
+//     // Add more image objects as needed
+// ];
 
-// TODO remove, this demo shouldn't need to reset the theme.
+
+//const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
 const defaultTheme = createTheme();
 
 export default function MarketPage() {
@@ -40,36 +63,33 @@ export default function MarketPage() {
         <ThemeProvider theme={defaultTheme}>
             <CssBaseline />
             <AppBar position="relative">
-                <Toolbar>
+                <Toolbar style={{flex:1, backgroundColor:'lightgreen'}}>
                     <Icon sx={{ mr: 2 }} />
-                    <Typography variant="h6" color="inherit" noWrap>
-                        Album layout
+                    <Typography variant="h5" color="aquagreen" noWrap>
+                        Marketplace
                     </Typography>
                 </Toolbar>
             </AppBar>
             <main>
-                {/* Hero unit */}
-
                 <Container sx={{ py: 8 }} maxWidth="md">
-                    {/* End hero unit */}
                     <Grid container spacing={4}>
                         <Grid item xs={12} sm={6} md={4}>
                             <ArticleForGrid/>
                         </Grid>
                         <Grid item xs={12} sm={6} md={4}>
-                            <ArticleForGrid/>
+                            <ArticleForGrid2/>
                         </Grid>
                         <Grid item xs={12} sm={6} md={4}>
-                            <ArticleForGrid/>
+                            <ArticleForGrid3/>
                         </Grid>
                         <Grid item xs={12} sm={6} md={4}>
-                            <ArticleForGrid/>
+                            <ArticleForGrid4/>
                         </Grid>
                         <Grid item xs={12} sm={6} md={4}>
-                            <ArticleForGrid/>
+                            <ArticleForGrid5/>
                         </Grid>
                         <Grid item xs={12} sm={6} md={4}>
-                        <ArticleForGrid/>
+                        <ArticleForGrid6/>
                     </Grid>
                     </Grid>
                 </Container>
@@ -77,7 +97,7 @@ export default function MarketPage() {
             {/* Footer */}
             <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
                 <Typography variant="h6" align="center" gutterBottom>
-                    Footer
+                    EarthSoul contact information
                 </Typography>
                 <Typography
                     variant="subtitle1"
@@ -85,7 +105,7 @@ export default function MarketPage() {
                     color="text.secondary"
                     component="p"
                 >
-                    Something here to give the footer a purpose!
+                    The best Project in Collabothon
                 </Typography>
                 <Copyright />
             </Box>
