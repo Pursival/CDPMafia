@@ -4,11 +4,12 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
+import {Link} from "react-router-dom";
 
 export default function ArticleForGrid2() {
     return (
         <Card style={{flex:1, backgroundColor:'lightgreen'}} sx={{ maxWidth: 345 }}>
-            <CardActionArea>
+            <CardActionArea component={Link} to="/article2">
                     <CardMedia
                     component="img"
                     height="140"
