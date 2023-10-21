@@ -11,6 +11,7 @@ import FullArticle3 from "./components/marketplace/FullArticle3";
 import FullArticle4 from "./components/marketplace/FullArticle4";
 import FullArticle5 from "./components/marketplace/FullArticle5";
 import {Home} from "./components/dashboard/home";
+import ChartPage from "./components/Personal Charts/ChartPage";
 
 export default function App() {
     return (
@@ -26,7 +27,7 @@ export default function App() {
                     <Route path="article4" element={<FullArticle4/>}/>
                     <Route path="article5" element={<FullArticle5/>}/>
                     <Route path="article6" element={<FullArticle6/>}/>
-
+                    <Route path="personalChart" element={<ChartPage/>}/>
                 </Route>
             </Routes>
         </BrowserRouter>
