@@ -1,23 +1,39 @@
 import React from 'react';
-import {Container, Typography, Card, CardContent, CardMedia, withStyles} from '@mui/material';
+import {Container, css, Typography} from '@mui/material';
+import myImage1 from '../../imagesFolder/green-recycle-symbol-icon-free-vector.jpg';
+import myImage2 from '../../imagesFolder/footprint.jpg';
+import myImage3 from '../../imagesFolder/icon_save_money.svg';
+import Card from "@mui/material/Card";
+import CardMedia from "@mui/material/CardMedia";
+import CardContent from "@mui/material/CardContent";
 
-const styles = {
-    card: {
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
-        margin: '20px 0',
-    },
-    cardMedia: {
-        width: 200,
-        height: 200,
-        flexShrink: 0,
-    },
-    cardContent: {
-        flex: '1 0 auto',
-    },
-};
 
+const containerStyles = css`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+`;
+
+const cardStyles = css`
+  border: 1px solid #ddd;
+  padding: 16px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  max-width: 500px;
+`;
+
+const titleStyles = css`
+  font-size: 24px;
+  color: #333;
+`;
+
+const descriptionStyles = css`
+  font-size: 16px;
+  color: #555;
+`;
 
 const MoreInfo = (props) => {
     const classes = props;
@@ -27,17 +43,17 @@ const MoreInfo = (props) => {
         {
             title: 'Reduce, Reuse, Recycle',
             description: 'Recycle paper, plastic, glass, and aluminum. Reuse items when possible.',
-            image: '/recycle-image.jpg',
+            image: myImage1,
         },
         {
             title: 'Conserve Water',
             description: 'Turn off the tap while brushing your teeth and fix any leaks.',
-            image: '/water-image.jpg',
+            image: myImage2,
         },
         {
             title: 'Save Energy',
             description: 'Turn off lights and unplug devices when not in use. Use energy-efficient appliances.',
-            image: '/energy-image.jpg',
+            image: myImage3,
         },
     ];
 
@@ -46,8 +62,9 @@ const MoreInfo = (props) => {
             <Typography variant="h4" gutterBottom>
                 Daily Environmental Tips
             </Typography>
+            <div css={containerStyles}>
             {tips.map((tip, index) => (
-                <Card className={classes.card} key={index}>
+                <Card className={classes.card} key={index} css={cardStyles}>
                     <CardMedia
                         className={classes.cardMedia}
                         component="img"
@@ -55,11 +72,12 @@ const MoreInfo = (props) => {
                         title={tip.title}
                     />
                     <CardContent className={classes.cardContent}>
-                        <Typography variant="h5">{tip.title}</Typography>
-                        <Typography>{tip.description}</Typography>
+                        <Typography variant="h5" css={titleStyles}>{tip.title}</Typography>
+                        <Typography css={descriptionStyles}>{tip.description}</Typography>
                     </CardContent>
                 </Card>
             ))}
+            </div>
         </Container>
     );
 };
