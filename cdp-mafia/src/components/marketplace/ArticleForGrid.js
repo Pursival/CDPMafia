@@ -20,17 +20,16 @@ export default function ArticleForGrid() {
                         />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        CommerzbankGreen
+                        EcoTech Solutions
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        Commerzbank green's purpose is reducing carbon footprint for bank customers by
-                        reducing use of non reusable materials.
+                        EcoTech Solutions is taking sustainability to the next level with its innovative project aimed at providing clean, safe drinking water to underserved communities.
                     </Typography>
                 </CardContent>
             </CardActionArea>
             <CardActions>
                 <Button align="center" size="small" color="primary" >
-                    Share
+                    Read more
                 </Button>
             </CardActions>
         </Card>

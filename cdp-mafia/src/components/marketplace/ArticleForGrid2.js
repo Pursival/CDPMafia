@@ -20,17 +20,16 @@ export default function ArticleForGrid2() {
                         />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        CommerzbankBlue
+                        GreenEats Food Co.
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        Commerzbank blue's purpose is reducing carbon footprint for bank customers by
-                        reducing use of non reusable materials.
+                        Article: GreenEats Food Co. is revolutionizing the food industry with its 'Farm-to-Fork' sustainability project.
                     </Typography>
                 </CardContent>
             </CardActionArea>
             <CardActions>
                 <Button align="center" size="small" color="primary" >
-                    Share
+                    Read more
                 </Button>
             </CardActions>
         </Card>

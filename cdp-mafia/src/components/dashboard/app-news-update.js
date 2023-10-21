@@ -10,10 +10,8 @@ import Typography from '@mui/material/Typography';
 import CardHeader from '@mui/material/CardHeader';
 
 
-
 import {fToNow} from "../utils/format-time";
 import Iconify from "../iconify";
-import Scrollbar from "../scrollbar";
 
 // ----------------------------------------------------------------------
 
@@ -22,13 +20,11 @@ export default function AppNewsUpdate({ title, subheader, list, ...other }) {
     <Card {...other}>
       <CardHeader title={title} subheader={subheader} />
 
-      <Scrollbar>
         <Stack spacing={3} sx={{ p: 3, pr: 0 }}>
           {list.map((news) => (
             <NewsItem key={news.id} news={news} />
           ))}
         </Stack>
-      </Scrollbar>
 
       <Divider sx={{ borderStyle: 'dashed' }} />
 

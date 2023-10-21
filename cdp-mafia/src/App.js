@@ -11,10 +11,10 @@ import FullArticle4 from "./components/marketplace/FullArticle4";
 import FullArticle5 from "./components/marketplace/FullArticle5";
 import {Home} from "./components/dashboard/home";
 import PersonalHomePage from "./components/personalTracking/personalHomePage";
-import ChartPage from "./components/personalTracking/ChartPage";
 import Input from "./components/personalTracking/input";
 import Profile from "./components/personalTracking/profile";
 import MoreInfo from "./components/personalTracking/more-info";
+import SustainabilityChallengesPage from "./components/personalTracking/gamification";
 
 export default function App() {
     return (
@@ -31,10 +31,11 @@ export default function App() {
                     <Route path={"article5"} element={<FullArticle5/>}/>
                     <Route path={"article6"} element={<FullArticle6/>}/>
                     <Route path={"input"} element={<Input/>}/>
+                    <Route path={"leaderboard"} element={<SustainabilityChallengesPage/>}/>
                     <Route path={"profile"} element={<Profile/>}/>
                     <Route path={"more-info"} element={<MoreInfo/>}/>
                     <Route path={"article6"} element={<FullArticle6/>}/>
-                    <Route path="personalChart" element={<ChartPage/>}/>
+                    {/*<Route path="personalChart" element={<ChartPage/>}/>*/}
                 </Route>
             </Routes>
         </BrowserRouter>

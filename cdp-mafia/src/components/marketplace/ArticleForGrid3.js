@@ -20,17 +20,16 @@ export default function ArticleForGrid3() {
                         />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        CommerzbankGold
+                        BioTech Innovations
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        Commerzbank gold's purpose is reducing carbon footprint for bank customers by
-                        reducing use of non reusable materials.
+                        BioTech Innovations is proud to announce the launch of its groundbreaking carbon-neutral manufacturing facility.
                     </Typography>
                 </CardContent>
             </CardActionArea>
             <CardActions>
                 <Button align="center" size="small" color="primary" >
-                    Share
+                    Read more
                 </Button>
             </CardActions>
         </Card>
