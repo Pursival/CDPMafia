@@ -5,6 +5,8 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import {Link} from "react-router-dom";
+import myImage from '../../imagesFolder/comerca.jpg';
+
 
 export default function ArticleForGrid6() {
     return (
@@ -14,7 +16,7 @@ export default function ArticleForGrid6() {
                     component="img"
                     height="140"
                     alt="green iguana"
-                    image={require('C:\\Users\\Crazzyninja\\IdeaProjects\\CDPMafiaLatest\\cdp-mafia\\src\\components\\imagesFolder\\comerca.jpg')}
+                    image={myImage}
                         />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">

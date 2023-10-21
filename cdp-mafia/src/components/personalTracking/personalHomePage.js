@@ -2,6 +2,8 @@ import React from 'react';
 import { Typography, Card, CardMedia, CardContent } from '@mui/material';
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
+import {Link} from "react-router-dom";
+import myImage from '../../imagesFolder/comerca.jpg';
 
 const PersonalHomePage = () => {
     return (
@@ -12,7 +14,7 @@ const PersonalHomePage = () => {
             <CardMedia
                 component="img"
                 height="400"
-                // image={require('C:\\Users\\Crazzyninja\\IdeaProjects\\CDPMafiaLatest\\cdp-mafia\\src\\components\\imagesFolder\\comerca.jpg')}
+                image={myImage}
                 alt="Article Header"
             />
             <CardContent>
@@ -43,9 +45,9 @@ const PersonalHomePage = () => {
                     reducing use of non reusable materials.
                 </Typography>
                 <Stack spacing={2} direction="row">
-                    <Button variant="outlined">Profile</Button>
-                    <Button variant="outlined">Input</Button>
-                    <Button variant="outlined">More information</Button>
+                    <Button variant="outlined" component={Link} to="/profile">Profile</Button>
+                    <Button variant="outlined" component={Link} to="/input">Input</Button>
+                    <Button variant="outlined" component={Link} to="/more-info">More information</Button>
                 </Stack>
             </CardContent>
         </Card>
