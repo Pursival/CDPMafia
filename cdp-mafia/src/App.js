@@ -1,14 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
-import MarketplaceGrid from "./components/marketplace/MarketplaceGrid";
 import MarketPage from "./components/marketplace/MarketPage";
-import ImageGrid from "./components/marketplace/MarketPage";
-function App() {
-  return (
-    <div className="App">
-        <MarketPage/>
-    </div>
-  );
+import PersonalTracking from "./components/personalTracking/personalTracking";
+import ReactDOM from "react-dom/client";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Navigation from "./components/common/navigation";
+import {Home} from "./components/common/home";
+
+export default function App() {
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Navigation/>}>
+                    <Route index element={<Home/>}/>
+                    <Route path={"marketplace"} element={<MarketPage/>}/>
+                    <Route path="person" element={<PersonalTracking/>}/>
+                </Route>
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App/>);

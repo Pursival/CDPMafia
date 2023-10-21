@@ -62,14 +62,14 @@ export default function MarketPage() {
     return (
         <ThemeProvider theme={defaultTheme}>
             <CssBaseline />
-            <AppBar position="relative">
-                <Toolbar style={{flex:1, backgroundColor:'lightgreen'}}>
-                    <Icon sx={{ mr: 2 }} />
-                    <Typography variant="h5" color="aquagreen" noWrap>
-                        Marketplace
-                    </Typography>
-                </Toolbar>
-            </AppBar>
+            {/*<AppBar position="relative">*/}
+            {/*    <Toolbar style={{flex:1, backgroundColor:'lightgreen'}}>*/}
+            {/*        <Icon sx={{ mr: 2 }} />*/}
+            {/*        <Typography variant="h5" color="aquagreen" noWrap>*/}
+            {/*            Marketplace*/}
+            {/*        </Typography>*/}
+            {/*    </Toolbar>*/}
+            {/*</AppBar>*/}
             <main>
                 <Container sx={{ py: 8 }} maxWidth="md">
                     <Grid container spacing={4}>
