@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
-import { styled, useTheme } from '@mui/material/styles';
+import {styled, useTheme} from '@mui/material/styles';
 
 
 import {fNumber} from "../utils/format-number";
@@ -31,7 +31,7 @@ const StyledChart = styled(Chart)(({ theme }) => ({
 export default function AppCurrentVisits({ title, subheader, chart, ...other }) {
   const theme = useTheme();
 
-  const { colors, series, options } = chart;
+  const { series, options } = chart;
 
   const chartSeries = series.map((i) => i.value);
 

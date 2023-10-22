@@ -11,10 +11,10 @@ import FullArticle4 from "./components/marketplace/FullArticle4";
 import FullArticle5 from "./components/marketplace/FullArticle5";
 import {Home} from "./components/dashboard/home";
 import PersonalHomePage from "./components/personalTracking/personalHomePage";
-import Input from "./components/personalTracking/input";
+import EnvironmentInput from "./components/personalTracking/input";
 import Profile from "./components/personalTracking/profile";
 import MoreInfo from "./components/personalTracking/more-info";
-import SustainabilityChallengesPage from "./components/personalTracking/gamification";
+import EnvironmentalSustainabilityPage from "./components/personalTracking/sustainability";
 
 export default function App() {
     return (
@@ -30,8 +30,8 @@ export default function App() {
                     <Route path={"article4"} element={<FullArticle4/>}/>
                     <Route path={"article5"} element={<FullArticle5/>}/>
                     <Route path={"article6"} element={<FullArticle6/>}/>
-                    <Route path={"input"} element={<Input/>}/>
-                    <Route path={"leaderboard"} element={<SustainabilityChallengesPage/>}/>
+                    <Route path={"input"} element={<EnvironmentInput/>}/>
+                    <Route path={"leaderboard"} element={<EnvironmentalSustainabilityPage/>}/>
                     <Route path={"profile"} element={<Profile/>}/>
                     <Route path={"more-info"} element={<MoreInfo/>}/>
                     <Route path={"article6"} element={<FullArticle6/>}/>

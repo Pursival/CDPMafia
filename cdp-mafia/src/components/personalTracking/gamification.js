@@ -1,74 +1,29 @@
-import React, { useState } from 'react';
-import { Container, Paper, Typography, Grid, withStyles } from '@mui/material';
+import React from 'react';
+import { Container, Typography, List, ListItem, ListItemText, Paper } from '@mui/material';
 
-const styles = {
-    container: {
-        marginTop: 20,
-    },
-    paper: {
-        padding: 20,
-    },
-    leaderboard: {
-        width: '100%',
-        textAlign: 'center',
-    },
-    badges: {
-        width: '100%',
-        textAlign: 'center',
-    },
-};
+const userBadges = [
+    { name: 'Eco Warrior', description: 'Completed 10 sustainability challenges' },
+    { name: 'Tree Hugger', description: 'Planted 5 trees' },
+];
 
-const SustainabilityChallengesPage = ({ classes }) => {
-    const [leaderboardData, setLeaderboardData] = useState([
-        { username: 'User1', score: 150 },
-        { username: 'User2', score: 120 },
-        { username: 'User3', score: 90 },
-    ]);
-
-    const [userBadges, setUserBadges] = useState([
-        { name: 'Eco Warrior', description: 'Completed 5 challenges' },
-        { name: 'Recycler', description: 'Recycled 100 items' },
-    ]);
-
+const Badges = () => {
     return (
-        <Container maxWidth="md" className={classes.container}>
-            <Paper elevation={3} className={classes.paper}>
-                <Typography variant="h4" gutterBottom>
-                    Sustainability Challenges
-                </Typography>
-                <Grid container spacing={2}>
-                    <Grid item xs={12} sm={6}>
-                        <div className={classes.leaderboard}>
-                            <Typography variant="h5" gutterBottom>
-                                Leaderboard
-                            </Typography>
-                            <ol>
-                                {leaderboardData.map((user, index) => (
-                                    <li key={index}>
-                                        {user.username} - {user.score} points
-                                    </li>
-                                ))}
-                            </ol>
-                        </div>
-                    </Grid>
-                    <Grid item xs={12} sm={6}>
-                        <div className={classes.badges}>
-                            <Typography variant="h5" gutterBottom>
-                                Your Badges
-                            </Typography>
-                            <ul>
-                                {userBadges.map((badge, index) => (
-                                    <li key={index}>
-                                        {badge.name} - {badge.description}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </Grid>
-                </Grid>
-            </Paper>
+        <Container maxWidth="md">
+            <Typography variant="h4" gutterBottom>
+                Your Environmental Sustainability Badges
+            </Typography>
+            <List>
+                {userBadges.map((badge, index) => (
+                    <ListItem key={index} component={Paper} style={{ backgroundColor: '#f50057', color: '#fff', marginBottom: '16px', borderRadius: '8px' }}>
+                        <ListItemText
+                            primary={<span style={{ fontWeight: 'bold' }}>{badge.name}</span>}
+                            secondary={<span style={{ marginLeft: '16px' }}>{badge.description}</span>}
+                        />
+                    </ListItem>
+                ))}
+            </List>
         </Container>
     );
 };
 
-export default SustainabilityChallengesPage;
+export default Badges;

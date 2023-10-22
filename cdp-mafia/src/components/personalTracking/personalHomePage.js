@@ -41,7 +41,8 @@ const PersonalHomePage = () => {
                 </Typography>
                 <Stack alignItems="center" justifyContent="center" spacing={2} direction="row">
                     <Button variant="outlined" component={Link} to="/profile">Profile</Button>
-                    <Button variant="outlined" component={Link} to="/leaderboard">Input</Button>
+                    <Button variant="outlined" component={Link} to="/input">Input</Button>
+                    <Button variant="outlined" component={Link} to="/leaderboard">Leaderboard</Button>
                     <Button variant="outlined" component={Link} to="/more-info">More information</Button>
                 </Stack>
             </CardContent>
