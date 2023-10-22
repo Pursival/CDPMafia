@@ -28,8 +28,8 @@ export default function ArticleForGrid2() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button align="center" size="small" color="primary" >
-                    Read more
+                <Button variant="contained" color="success" align="center" size="small">
+                    Invest
                 </Button>
             </CardActions>
         </Card>

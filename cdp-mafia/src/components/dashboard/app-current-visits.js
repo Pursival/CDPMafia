@@ -7,6 +7,8 @@ import {styled, useTheme} from '@mui/material/styles';
 
 import {fNumber} from "../utils/format-number";
 import Chart, {useChart} from "../chart";
+import {maxHeight} from "@mui/system";
+import {Link} from "react-router-dom";
 
 // ----------------------------------------------------------------------
 
@@ -78,7 +80,7 @@ export default function AppCurrentVisits({ title, subheader, chart, ...other }) 
   });
 
   return (
-    <Card {...other}>
+    <Card style={{flex:1, backgroundColor:'paleturquoise '}} sx={{ maxWidth: 600, maxHeight: 550}} component={Link} to="/profile"  >
       <CardHeader title={title} subheader={subheader} sx={{ mb: 5 }} />
 
       <StyledChart

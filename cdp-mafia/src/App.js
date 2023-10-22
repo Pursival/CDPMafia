@@ -14,10 +14,14 @@ import PersonalHomePage from "./components/personalTracking/personalHomePage";
 import EnvironmentInput from "./components/personalTracking/input";
 import Profile from "./components/personalTracking/profile";
 import MoreInfo from "./components/personalTracking/more-info";
+import SustainabilityChallengesPage from "./components/personalTracking/gamification";
+import {AppProvider} from "./components/common/AppContext";
 import EnvironmentalSustainabilityPage from "./components/personalTracking/sustainability";
 
 export default function App() {
     return (
+        <AppProvider>
+        <div>
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Navigation/>}>
@@ -39,6 +43,8 @@ export default function App() {
                 </Route>
             </Routes>
         </BrowserRouter>
+        </div>
+        </AppProvider>
     );
 }
 

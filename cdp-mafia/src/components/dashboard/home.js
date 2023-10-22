@@ -19,6 +19,10 @@ export const Home = (props) => {
         {player: 'Player 3', score: 72},
         {player: 'Player 4', score: 60},
         {player: 'Player 5', score: 45},
+        {player: 'Player 6', score: 85},
+        {player: 'Player 7', score: 72},
+        {player: 'Player 8', score: 60},
+        {player: 'Player 9', score: 45},
     ];
 
     return (
@@ -28,17 +32,17 @@ export const Home = (props) => {
             </Typography>
             <Grid container spacing={4}>
                 <Grid xs={12} sm={6} md={3}>
-                    <AppWidgetSummary
-                        title="Weekly Sales"
+                    <AppWidgetSummary style={{flex:1, backgroundColor:'darkseagreen'}} sx={{ maxWidth: 600}}
+                        title="Trees planted worldwide"
                         total={714000}
-                        color="success"
+                        color="caf0f8"
                         // icon={<img alt="icon" src="/assets/icons/glass/ic_glass_bag.png"/>}
                     />
                 </Grid>
 
                 <Grid xs={12} sm={6} md={3}>
-                    <AppWidgetSummary
-                        title="New Users"
+                    <AppWidgetSummary style={{flex:1, backgroundColor:'darkseagreen'}} sx={{ maxWidth: 600}}
+                        title="Carbon emmissions reduced"
                         total={1352831}
                         color="info"
                         // icon={<img alt="icon" src="/assets/icons/glass/ic_glass_users.png"/>}
@@ -46,8 +50,8 @@ export const Home = (props) => {
                 </Grid>
 
                 <Grid xs={12} sm={6} md={3}>
-                    <AppWidgetSummary
-                        title="Item Orders"
+                    <AppWidgetSummary style={{flex:1, backgroundColor:'darkseagreen  '}} sx={{ maxWidth: 600}}
+                        title="People helped"
                         total={1723315}
                         color="warning"
                         // icon={<img alt="icon" src="/assets/icons/glass/ic_glass_buy.png"/>}
@@ -55,16 +59,16 @@ export const Home = (props) => {
                 </Grid>
 
                 <Grid xs={12} sm={6} md={3}>
-                    <AppWidgetSummary
-                        title="Bug Reports"
+                    <AppWidgetSummary style={{flex:1, backgroundColor:'darkseagreen '}} sx={{ maxWidth: 600}}
+                        title="Sectors Saved"
                         total={234}
                         color="error"
                         // icon={<img alt="icon" src="/assets/icons/glass/ic_glass_message.png"/>}
                     />
                 </Grid>
                 <Grid xs={12} md={6} lg={4}>
-                    <AppNewsUpdate
-                        title="News Update"
+                    <AppNewsUpdate style={{flex:1, backgroundColor:'lightcyan  '}} sx={{ maxWidth: 600, maxHeight: 550}}
+                        title="Environmental news"
                         list={[...Array(5)].map((_, index) => ({
                             id: faker.string.uuid(),
                             title: faker.person.jobTitle(),
@@ -74,15 +78,16 @@ export const Home = (props) => {
                         }))}
                     />
                 </Grid>
-                <Grid xs={12} md={6} lg={4}>
-                    <AnalyticsOrderTimeline
-                        title="Order Timeline"
-                        list={[...Array(5)].map((_, index) => ({
+                <Grid xs={12} md={6} lg={4} >
+                    <AnalyticsOrderTimeline style={{flex:1, backgroundColor:'lightcyan  '}} sx={{ maxWidth: 600, maxHeight: 550}}
+                        title="Investment Timeline"
+                        list={[...Array(6)].map((_, index) => ({
                             id: faker.string.uuid(),
                             title: [
                                 '1983, orders, $4220',
                                 '12 Invoices have been paid',
                                 'Order #37745 from September',
+                                'New order placed #XF-2356',
                                 'New order placed #XF-2356',
                                 'New order placed #XF-2346',
                             ][index],
@@ -92,25 +97,12 @@ export const Home = (props) => {
                     />
                 </Grid>
                 <Grid xs={12} md={6} lg={4}>
-                    <AppCurrentVisits component={Link} to="/profile"
-                        title="Current Visits"
-                        chart={{
-                            series: [
-                                {label: 'America', value: 4344},
-                                {label: 'Asia', value: 5435},
-                                {label: 'Europe', value: 1443},
-                                {label: 'Africa', value: 4443},
-                            ],
-                        }}
-                    />
-                </Grid>
-                <Grid xs={12} md={6} lg={4}>
-                    <TableContainer component={Paper}>
+                    <TableContainer style={{flex:1, backgroundColor:'lightcyan '}} sx={{ maxWidth: 600, maxHeight: 550}} component={Paper}>
                         <Table>
                             <TableHead>
                                 <TableRow>
-                                    <TableCell>Player</TableCell>
-                                    <TableCell>Score</TableCell>
+                                    <TableCell>User</TableCell>
+                                    <TableCell>Tokens</TableCell>
                                 </TableRow>
                             </TableHead>
                             <TableBody>
@@ -124,6 +116,19 @@ export const Home = (props) => {
                         </Table>
                     </TableContainer>
                 </Grid>
+                {/*<Grid xs={12} md={6} lg={4}>*/}
+                {/*    <AppCurrentVisits style={{ marginLeft: '800px'}}*/}
+                {/*        title="Carbon emisions offset"*/}
+                {/*        chart={{*/}
+                {/*            series: [*/}
+                {/*                {label: 'America', value: 4344},*/}
+                {/*                {label: 'Asia', value: 5435},*/}
+                {/*                {label: 'Europe', value: 1443},*/}
+                {/*                {label: 'Africa', value: 4443},*/}
+                {/*            ],*/}
+                {/*        }}*/}
+                {/*    />*/}
+                {/*</Grid>*/}
             </Grid>
         </Container>
     );
