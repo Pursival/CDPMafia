@@ -5,6 +5,8 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import {Link} from "react-router-dom";
+import myImage from '../../imagesFolder/icon_save_money.svg';
+
 
 export default function ArticleForGrid4() {
     return (
@@ -14,21 +16,19 @@ export default function ArticleForGrid4() {
                     component="img"
                     height="140"
                     alt="green iguana"
-                    image={require('C:\\Users\\Crazzyninja\\IdeaProjects\\CDPMafiaLatest\\cdp-mafia\\src\\components\\imagesFolder\\comerca.jpg')}
+                    image={myImage}
                         />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        CommerzbankGreen
+                        GreenWheels Transportatio
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        Commerzbank green's purpose is reducing carbon footprint for bank customers by
-                        reducing use of non reusable materials.
-                    </Typography>
+                        GreenWheels Transportation is making strides toward a more sustainable future with its eco-friendly transportation project.                     </Typography>
                 </CardContent>
             </CardActionArea>
             <CardActions>
                 <Button align="center" size="small" color="primary" >
-                    Share
+                    Read more
                 </Button>
             </CardActions>
         </Card>

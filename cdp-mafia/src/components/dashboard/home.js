@@ -92,7 +92,7 @@ export const Home = (props) => {
                     />
                 </Grid>
                 <Grid xs={12} md={6} lg={4}>
-                    <AppCurrentVisits component={Link} to="/personalChart"
+                    <AppCurrentVisits component={Link} to="/profile"
                         title="Current Visits"
                         chart={{
                             series: [

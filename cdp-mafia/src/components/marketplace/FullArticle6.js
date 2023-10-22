@@ -1,5 +1,6 @@
 import React from 'react';
 import { Typography, Card, CardMedia, CardContent } from '@mui/material';
+import myImage from '../../imagesFolder/footprint.jpg';
 
 const FullArticle6 = () => {
     return (
@@ -10,7 +11,7 @@ const FullArticle6 = () => {
             <CardMedia
                 component="img"
                 height="400"
-                image={require('C:\\Users\\Crazzyninja\\IdeaProjects\\CDPMafiaLatest\\cdp-mafia\\src\\components\\imagesFolder\\comerca.jpg')}
+                image={myImage}
                 alt="Article Header"
             />
             <CardContent>
